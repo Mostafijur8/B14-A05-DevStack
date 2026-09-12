@@ -34,20 +34,46 @@ const Nav = () => {
 
         {/* destop menu */}
         <ul className=" hidden  md:flex justify-between items-center gap-5">
-          <li className=" hover:text-[#db2777] transition-colors duration-200  font-semibold">
-            Home
+          <li>
+            <a
+              href="/"
+              className=" hover:text-[#db2777] transition-colors duration-200  font-semibold"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+            >
+              {" "}
+              Technologies
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+            >
+              Projects
+            </a>
           </li>
           <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold">
-            Technologies
-          </li>
-          <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold">
-            Projects
-          </li>
-          <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold">
-            About
+            <a
+              className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+              href="/"
+            >
+              About
+            </a>
           </li>
           <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold ">
-            Contact
+            <a
+              className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+              href="/"
+            >
+              Contact
+            </a>
           </li>
         </ul>
 
@@ -73,20 +99,45 @@ const Nav = () => {
       {menuOpen && (
         <div className="md:hidden  mx-4 mb-4  px-4 py-4  bg-white rounded-xl shadow-[0_4px_15px_rgba(0,0,0,0.15)]">
           <ul className="  flex flex-col  items-s gap-5">
-            <li className=" hover:text-[#db2777] transition-colors duration-200  font-semibold">
-              Home
+            <li>
+              <a
+                href="/"
+                className=" hover:text-[#db2777] transition-colors duration-200  font-semibold"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+              >
+                Technologies
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+              >
+                Projects
+              </a>
             </li>
             <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold">
-              Technologies
-            </li>
-            <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold">
-              Projects
-            </li>
-            <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold">
-              About
+              <a
+                className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+                href="/"
+              >
+                About
+              </a>
             </li>
             <li className=" hover:text-[#db2777] transition-colors duration-200 font-semibold ">
-              Contact
+              <a
+                className=" hover:text-[#db2777] transition-colors duration-200 font-semibold"
+                href="/"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
