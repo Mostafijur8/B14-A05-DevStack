@@ -4,22 +4,30 @@ const Footer = () => {
   return (
     <div className="border-t-2 border-white shadow-[0_-5px_15px_rgba(255,255,255,0.8)]">
       <footer className="container mx-auto grid gap-10   lg:mt-7 lg:grid-cols-4 lg:px-0  ">
-        <div className="">
-          <img src={footerLogo} alt="" />
-          <p className="text-[#64748b] my-3">
+        <div>
+          <img className="mx-auto lg:mx-0" src={footerLogo} alt="" />
+          <p className="text-[#64748b] my-3 text-center lg:text-left ">
             Curated tools, technologies, and resources for developers building
             modern software.
           </p>
-          <div className="flex justify-start gap-3 font-bold">
-            <a className=" hover:text-amber-600 " href="https://github.com">
-              GitHub
-            </a>
-            <a className=" hover:text-amber-600 " href="https://twitter.com">
-              Twitter
-            </a>
-            <a className=" hover:text-amber-600 " href="https://linkedIn.com">
-              LinkdIn
-            </a>
+          <div className="flex  justify-evenly lg:justify-start lg:gap-3 font-bold  text-[#4b5563] lg:text-black">
+            <li className="lg:list-none">
+              {" "}
+              <a className=" hover:text-amber-600 " href="https://github.com">
+                GitHub
+              </a>
+            </li>
+            <li className="lg:list-none">
+              {" "}
+              <a className=" hover:text-amber-600 " href="https://twitter.com">
+                Twitter
+              </a>
+            </li>
+            <li className="lg:list-none">
+              <a className=" hover:text-amber-600 " href="https://linkedIn.com">
+                LinkdIn
+              </a>
+            </li>
           </div>
         </div>
 
@@ -68,8 +76,8 @@ const Footer = () => {
 
       <div className="divider my-10 "></div>
 
-      <div className="container text-[#64748b] mx-auto grid grid-cols-2 justify-between lg:px-0 px-6">
-        <p>© 2026 Dev Stack. All rights reserved.</p>
+      <div className="container text-[10px] lg:text-base text-[#64748b] mx-auto grid grid-cols-2 justify-between lg:px-0 px-6">
+        <p >© 2026 Dev Stack. All rights reserved.</p>
         <div className="mb-10 flex justify-end gap-2">
           <a className=" hover:text-amber-600" href="#">
             Privacy
