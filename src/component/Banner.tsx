@@ -1,7 +1,7 @@
 import banner from "../assets/images/banner-stack.png";
 const Banner = () => {
   return (
-    <div className="container mx-auto grid grid-cols-1 items-center mt-7 lg:mt-0 lg:grid-cols-2 px-2 sm:px-6 lg:px-8  ">
+    <div className="container mx-auto grid grid-cols-1 items-center mt-7 lg:mt-0 lg:grid-cols-2 px-2 lg:px-0 px-6 ">
       <div className="md:text-left text-center">
         <h1 className="text-[30px] md:text-[60px]  font-bold">
           Build Your Ideal <br />
