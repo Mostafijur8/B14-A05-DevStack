@@ -98,7 +98,7 @@ const Nav = () => {
       {/* mobile menu list */}
       {menuOpen && (
         <div className="md:hidden  mx-4 mb-4  px-4 py-4  bg-white rounded-xl shadow-[0_4px_15px_rgba(0,0,0,0.15)]">
-          <ul className="  flex flex-col  items-s gap-5">
+          <ul className="  flex flex-col  items-start gap-5">
             <li>
               <a
                 href="/"
