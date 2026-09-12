@@ -6,7 +6,7 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
-      <nav className="container mx-auto px-2 sm:px-6 lg:px-8 flex justify-between items-center py-4 md:shadow-none shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+      <nav className="container mx-auto px-2 sm:px-6 lg:px-8  py-4 flex justify-between items-center  md:shadow-none shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
         {/* mobile menu button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
