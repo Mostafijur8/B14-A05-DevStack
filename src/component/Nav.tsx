@@ -5,7 +5,7 @@ const Nav = () => {
   const [active, setActive] = useState("signup");
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div>
+    <div className="relative">
       <nav className="container mx-auto px-2 sm:px-6 lg:px-8  py-4 flex justify-between items-center  md:shadow-none shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
         {/* mobile menu button */}
         <button
@@ -97,7 +97,7 @@ const Nav = () => {
 
       {/* mobile menu list */}
       {menuOpen && (
-        <div className="md:hidden  mx-4 mb-4  px-4 py-4  bg-white rounded-xl shadow-[0_4px_15px_rgba(0,0,0,0.15)]">
+        <div className="md:hidden  absolute left-4 top-20 z-50 mx-4 mb-4  px-4 py-4  bg-white rounded-xl shadow-[0_4px_15px_rgba(0,0,0,0.15)] ">
           <ul className="  flex flex-col  items-start gap-5">
             <li>
               <a
