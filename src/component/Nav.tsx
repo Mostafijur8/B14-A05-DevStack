@@ -5,8 +5,8 @@ const Nav = () => {
   const [active, setActive] = useState("signup");
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="relative">
-      <nav className="container mx-auto px-2 sm:px-6 lg:px-8  py-4 flex justify-between items-center  md:shadow-none shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
+    <div className="relative sticky top-0 z-50 bg-white">
+      <nav className="container mx-auto px-2 sm:px-6 lg:px-8  py-4  flex justify-between items-center  md:shadow-none shadow-[0_2px_10px_rgba(0,0,0,0.08)]">
         {/* mobile menu button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}

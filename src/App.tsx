@@ -1,4 +1,5 @@
 import Banner from "./component/Banner";
+import Footer from "./component/Footer";
 import Nav from "./component/Nav";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <Nav />
       <Banner/>
+      <Footer/>
     </div>
   );
 };
