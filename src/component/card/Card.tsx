@@ -83,11 +83,11 @@ const Card = ({ cardPromise }: cardProps) => {
 
         <div className="self-start p-5  rounded-xl lg:min-h-[145px] shadow-[0_4px_20px_rgba(15,23,42,0.08)] ">
           <div className="">
-            <div className=" ">
+            <div>
               <p className="text-2xl font-bold">Your stack</p>
-              <p>No technologies selected yet.</p>
-            </div>
-            <p>Your stack is empty.</p>
+              <p className="text-[#94a3b8] text-[12px]">No technologies selected yet.</p>
+            </div >
+            <p className="text-[#94a3b8] text-center p-5 border mt-5 border-dashed rounded-xl border-slate-200 ">Your stack is empty.</p>
           </div>
         </div>
       </div>
