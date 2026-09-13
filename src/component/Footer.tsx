@@ -76,7 +76,7 @@ const Footer = () => {
 
       <div className="divider my-10 "></div>
 
-      <div className="container text-[10px] lg:text-base text-[#64748b] mx-auto grid grid-cols-2 px-5 lg:px-0 justify-between ">
+      <div className="container text-[13px] lg:text-base text-[#64748b] mx-auto grid grid-cols-2 px-5 lg:px-0 justify-between ">
         <p>© 2026 Dev Stack. All rights reserved.</p>
         <div className="mb-10 flex justify-end gap-2">
           <a className=" hover:text-amber-600" href="#">
