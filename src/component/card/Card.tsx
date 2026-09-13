@@ -38,7 +38,7 @@ const Card = ({ cardPromise }: cardProps) => {
         </p>
       </div>
 
-      <div className="container mx-auto px-5 lg:px-0 grid grid-cols-1 gap-6 lg:grid-cols-4 mb-10">
+      <div className="container mx-auto px-5 lg:px-0 grid grid-cols-1 gap-6 lg:grid-cols-4 mb-10 ">
         {/* techonlogy card */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-3 lg:grid-cols-3 ">
           {cards.map((card) => {
@@ -46,7 +46,7 @@ const Card = ({ cardPromise }: cardProps) => {
             return (
               <div
                 key={card.id}
-                className="rounded-xl  p-5 flex flex-col gap-5 shadow-[0_4px_20px_rgba(15,23,42,0.08)]"
+                className="rounded-xl  p-5 flex flex-col gap-5 shadow-[0_4px_20px_rgba(15,23,42,0.08)] transition duration-300 hover:-translate-y-2"
               >
                 <div className="flex justify-between items-center">
                   <img src={card.icon} alt="" className="h-8 w-8" />

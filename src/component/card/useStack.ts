@@ -1,7 +1,6 @@
 import { useState } from "react";
 import type { Icard } from "../type/CardType";
 import { toast } from "react-toastify";
-import Card from "./Card";
 
 const useStack = () => {
   const [selectedCards, setSelectedCards] = useState<Icard[]>([]);
@@ -20,11 +19,14 @@ const useStack = () => {
     toast.success(`${Card.name} is added to stack`);
   };
 
-  //   Remove one technology
+  // Remove one technology
   const removeFromStack = (id: string) => {
+    const cardToRemove = selectedCards.find((item) => item.id === id);
+
     setSelectedCards((prev) => prev.filter((item) => item.id !== id));
-    if (Card) {
-      toast.warning(`${Card.name} removed from stack`);
+
+    if (cardToRemove) {
+      toast.warning(`${cardToRemove.name} removed from stack`);
     }
   };
 
