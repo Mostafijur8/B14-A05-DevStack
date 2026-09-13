@@ -24,7 +24,7 @@ const Card = ({ cardPromise }: cardProps) => {
   return (
     // card title
     <div>
-      <div className="container mx-auto px-2 lg:0 mb-5">
+      <div className="container mx-auto px-5 lg:0 mb-5">
         <h1 className="text-[22px] lg:text-[36px] font-bold">
           Explore the{" "}
           <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
@@ -36,7 +36,7 @@ const Card = ({ cardPromise }: cardProps) => {
         </p>
       </div>
 
-      <div className="container mx-auto px-2 lg:px-0 grid grid-cols-1 gap-6 lg:grid-cols-4 mb-10">
+      <div className="container mx-auto px-5 lg:px-0 grid grid-cols-1 gap-6 lg:grid-cols-4 mb-10">
         {/* techonlogy card */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-3 lg:grid-cols-3 ">
           {cards.map((card) => {
@@ -62,7 +62,7 @@ const Card = ({ cardPromise }: cardProps) => {
                 <div>
                   <div className="mb-2 border-t border-slate-200"></div>
                   <div className="flex justify-between items-center text-[11px] ">
-                    <span className="rounded-b-sm text-[#64748b] font-semibold bg-slate-100/80 px-2 ">
+                    <span className="rounded-b-sm text-[#64748b] font-semibold bg-slate-100/80 px-5 ">
                       {card.category}
                     </span>
                     <p className="text-[#64748b]">{card.difficulty}</p>
