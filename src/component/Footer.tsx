@@ -2,8 +2,8 @@ import footerLogo from "../assets/images/logo-text.png";
 
 const Footer = () => {
   return (
-    <div className="border-t-2 border-white shadow-[0_-5px_15px_rgba(255,255,255,0.8)]">
-      <footer className="container mx-auto grid gap-10   lg:mt-7 lg:grid-cols-4 lg:px-0  ">
+    <div className="border-t-2 border-white  shadow-[0_4px_20px_rgba(15,23,42,0.08)] pt-5">
+      <footer className="container mx-auto grid gap-10  lg:mt-7 lg:grid-cols-4 px-2 lg:px-0  ">
         <div>
           <img className="mx-auto lg:mx-0" src={footerLogo} alt="" />
           <p className="text-[#64748b] my-3 text-center lg:text-left ">
@@ -76,8 +76,8 @@ const Footer = () => {
 
       <div className="divider my-10 "></div>
 
-      <div className="container text-[10px] lg:text-base text-[#64748b] mx-auto grid grid-cols-2 justify-between lg:px-0 px-6">
-        <p >© 2026 Dev Stack. All rights reserved.</p>
+      <div className="container text-[10px] lg:text-base text-[#64748b] mx-auto grid grid-cols-2 px-2 lg:px-0 justify-between ">
+        <p>© 2026 Dev Stack. All rights reserved.</p>
         <div className="mb-10 flex justify-end gap-2">
           <a className=" hover:text-amber-600" href="#">
             Privacy
