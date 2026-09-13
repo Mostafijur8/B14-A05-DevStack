@@ -1,5 +1,7 @@
 import { use } from "react";
 import type { Icard } from "../type/CardType";
+import Stack from "./Stack";
+import useStack from "./useStack";
 
 interface cardProps {
   cardPromise: Promise<Icard[]>;
@@ -18,8 +20,8 @@ const badgeColors: Record<string, string> = {
 };
 const Card = ({ cardPromise }: cardProps) => {
   const cards = use(cardPromise);
-
-  console.log(cards);
+  const { selectedCards, addToStack, removeFromStack, removeAll, isAdded } =
+    useStack();
 
   return (
     // card title
@@ -40,6 +42,7 @@ const Card = ({ cardPromise }: cardProps) => {
         {/* techonlogy card */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-3 lg:grid-cols-3 ">
           {cards.map((card) => {
+            const added = isAdded(card.id);
             return (
               <div
                 key={card.id}
@@ -71,8 +74,16 @@ const Card = ({ cardPromise }: cardProps) => {
                     <p>⭐ {card.rating}</p>
                   </div>
                 </div>
-                <button className="btn rounded-xl bg-black text-white">
-                  Add to Stack
+                <button
+                  onClick={() => addToStack(card)}
+                  disabled={added}
+                  className={`btn rounded-xl ${
+                    added
+                      ? " text-black"
+                      : " cursor-pointer bg-black text-white"
+                  }`}
+                >
+                  {added ? "✓ Added to Stack" : "Add to Stack"}
                 </button>
               </div>
             );
@@ -81,15 +92,11 @@ const Card = ({ cardPromise }: cardProps) => {
 
         {/* stack */}
 
-        <div className="self-start p-5  rounded-xl lg:min-h-[145px] shadow-[0_4px_20px_rgba(15,23,42,0.08)] ">
-          <div className="">
-            <div>
-              <p className="text-2xl font-bold">Your stack</p>
-              <p className="text-[#94a3b8] text-[12px]">No technologies selected yet.</p>
-            </div >
-            <p className="text-[#94a3b8] text-center p-5 border mt-5 border-dashed rounded-xl border-slate-200 ">Your stack is empty.</p>
-          </div>
-        </div>
+        <Stack
+          selectedCards={selectedCards}
+          removeFromStack={removeFromStack}
+          removeAll={removeAll}
+        />
       </div>
     </div>
   );
