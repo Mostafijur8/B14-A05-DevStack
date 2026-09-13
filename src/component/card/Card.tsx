@@ -62,10 +62,12 @@ const Card = ({ cardPromise }: cardProps) => {
                 <div>
                   <div className="mb-2 border-t border-slate-200"></div>
                   <div className="flex justify-between items-center text-[11px] ">
-                    <span className="rounded-b-sm text-[#64748b] font-semibold bg-slate-100/80 px-5 ">
+                    <span className="rounded-b-sm text-[#64748b] font-semibold bg-slate-100/80 px-5 lg:px-3 ">
                       {card.category}
                     </span>
-                    <p className="text-[#64748b]">{card.difficulty}</p>
+                    <p className="text-[#64748b] lg:text-[10px]">
+                      {card.difficulty}
+                    </p>
                     <p>⭐ {card.rating}</p>
                   </div>
                 </div>
@@ -79,7 +81,15 @@ const Card = ({ cardPromise }: cardProps) => {
 
         {/* stack */}
 
-        <div className="rounded-xl shadow-[0_4px_20px_rgba(15,23,42,0.08)] ">your stack</div>
+        <div className="self-start p-5  rounded-xl lg:min-h-[145px] shadow-[0_4px_20px_rgba(15,23,42,0.08)] ">
+          <div className="">
+            <div className=" ">
+              <p className="text-2xl font-bold">your stack</p>
+              <p>No technologies selected yet.</p>
+            </div>
+            <p>Your stack is empty.</p>
+          </div>
+        </div>
       </div>
     </div>
   );
