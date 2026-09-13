@@ -22,9 +22,9 @@ const Nav = () => {
             <path
               d="M0.75 0.75H18.75M0.75 7.75H18.75M0.75 14.75H18.75"
               stroke="#7B7171"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>
