@@ -57,6 +57,7 @@ The `useState` hook is used to create and manage changing data in a React compon
 In this project, I used `useState` in the `useStack` custom hook to store the selected technologies:
 
 ```tsx
+
 const [selectedCards, setSelectedCards] = useState<Icard[]>([]);
 ```
 
