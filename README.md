@@ -1,75 +1,156 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a41ccd72-4d19-4a98-abe4-d1cc06ac0587/deploy-status)](https://app.netlify.com/projects/b14-05-devstack/deploys)
 
-Currently, two official plugins are available:
+A modern technology stack builder application built with **React, TypeScript, Vite, Tailwind CSS, and DaisyUI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+[View Live Website](https://b14-05-devstack.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📌 Project Overview
 
-## Expanding the ESLint configuration
+This project allows users to explore different technologies and create their own technology stack.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Users can:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Explore different technologies
+* View technology details
+* Add technologies to their stack
+* Remove individual technologies
+* Remove all technologies from the stack
+* Prevent duplicate technologies from being added
+* See the total number of selected technologies
+* Use the application on mobile, tablet, and desktop devices
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Technologies Used
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* DaisyUI
+* React Icons
 
+## ✨ Features
+
+### Technology Cards
+
+Each technology is displayed in a card containing:
+
+* Technology icon
+* Technology name
+* Category
+* Description
+* Rating
+* Difficulty level
+* Badge
+
+### Your Stack
+
+The stack section allows users to:
+
+* Add technologies
+* Remove a specific technology
+* Remove all technologies
+* See the selected technology count
+
+### Duplicate Prevention
+
+A technology cannot be added to the stack more than once.
+
+When a technology is already added, the button becomes disabled and displays:
+
+`✓ Added to Stack`
+
+## 📱 Responsive Design
+
+The application is fully responsive and works on:
+
+* 📱 Mobile
+* 📲 Tablet
+* 💻 Desktop
+
+## 📂 Project Structure
+
+```text
+src/
+├── api.ts
+├── type/
+│   └── CardType.ts
+├── component/
+│   ├── Banner.tsx
+│   └── Card/
+│       ├── Card.tsx
+│       ├── Stack.tsx
+│       └── useStack.ts
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
+
+Go to the project directory:
+
+```bash
+cd YOUR_PROJECT_FOLDER
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## ▶️ Run Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will run on the local development server.
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+## 👀 Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📦 Main Dependencies
+
+```text
+React
+TypeScript
+Vite
+Tailwind CSS
+DaisyUI
+React Icons
+```
+
+## 🌐 Deployment
+
+The project is deployed using **Netlify**.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a41ccd72-4d19-4a98-abe4-d1cc06ac0587/deploy-status)](https://app.netlify.com/projects/b14-05-devstack/deploys)
+
+## 👨‍💻 Author
+
+**Mostafijur**
+
+---
+
+⭐ If you like this project, feel free to give it a star!
